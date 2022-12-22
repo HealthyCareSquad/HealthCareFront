@@ -10,5 +10,6 @@ export class SidebarComponent {
   links: SidebarLink[] = sidebarLinks
 
   @Input('currentRouter') currentRouter : string | undefined = '';
+  @Input('currentRouterSub') currentRouterSub : string | undefined = '';
   @Input('isPainel') IsPainel: string | undefined = 'false';
 }

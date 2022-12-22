@@ -1,14 +1,14 @@
 <div class="cadEspecialidade">
-  <app-sidebar></app-sidebar>
+  <app-sidebar isPainel="true" currentRouterSub="/painel/cadastro-especialidade"></app-sidebar>
     <div class="forms-especialidade">
       <app-header-screen title="Cadastro Especialidade"></app-header-screen>
         <form class="form-content">
           <div class="content-all">
             <div class="content">
-              <app-text inputId="inputNameEspecialidade" typeInput="text" nameInput="Nome" placeholder="Digite o nome..."></app-text>
+              <app-text inputId="inputNameEspecialidade" valor="especialidade.nome" typeInput="text" nameInput="Nome" placeholder="Digite o nome..."></app-text>
             </div>
             <div class="content">
-              <app-text inputId="inputDescricaoEspecialidade" typeInput="text" nameInput="Descrição" placeholder="Descrição da especialidade..."></app-text>
+              <app-text inputId="inputDescricaoEspecialidade" valor="especialidade.descricao" typeInput="text" nameInput="Descrição" placeholder="Descrição da especialidade..."></app-text>
             </div>
             <div class="contentTwo">
               <span>Ativo</span>

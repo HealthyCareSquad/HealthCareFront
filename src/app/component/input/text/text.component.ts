@@ -10,4 +10,5 @@ export class TextComponent {
   @Input('nameInput') nameInput:string = "";
   @Input('typeInput') typeInput:string = "";
   @Input('placeholder') placeholder:string = "";
+  @Input('valor') valorTexto:string = "";
 }

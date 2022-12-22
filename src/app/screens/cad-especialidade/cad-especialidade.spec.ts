@@ -5,6 +5,7 @@ import { CadEspecialidadeComponent } from './cad-especialidade.component';
 describe('CadEspecialidadeComponent', () => {
   let Component: CadEspecialidadeComponent;
   let fixture: ComponentFixture<CadEspecialidadeComponent>;
+  // especialidade!: IEspecialidade;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

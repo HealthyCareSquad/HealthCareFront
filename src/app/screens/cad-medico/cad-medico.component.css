@@ -1,10 +1,10 @@
 .cadMedico{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   background-color: #F0F0F2;
   display: flex;
 }
-
 
 .cadMedico .forms{
   width: 100%;
@@ -22,10 +22,9 @@
 
 .cadMedico .forms form{
   display: flex;
-  padding: 3rem;
+  padding: 1rem;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
   position: relative;
   height: 100%;
@@ -55,6 +54,71 @@
   gap: .6rem;
 }
 
+.cadMedico .forms form .formBody .lineTwo mat-label {
+  font-size: .9rem;
+}
+
+.cadMedico .forms form .formBody .lineDate{
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  gap: .6rem;
+}
+
+.cadMedico .forms form .formBody .lineDate .dateCalendar span{
+  margin-right: .5rem;
+  color: rgba(0, 0, 0, .5);
+}
+
+
+.cadMedico .forms form .formBody .lineDate .dateCalendar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cadMedico .forms form .formBody .timeCalendar {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  gap: .6rem;
+}
+.cadMedico .forms form .formBody .timeCalendar .inputTime{
+  padding: 0 .5rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 4px;
+  height: 100%;
+}
+
+.cadMedico .forms form .formBody .timeCalendar .timeInitial {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cadMedico .forms form .formBody .timeCalendar .timeEnd {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cadMedico .forms form .formBody .timeCalendar .timeInitial span {
+  color: rgba(0, 0, 0, .5);
+  white-space: nowrap;
+}
+
+.cadMedico .forms form .formBody .timeCalendar .timeEnd span {
+  color: rgba(0, 0, 0, .5);
+  white-space: nowrap;
+}
+
 .cadMedico .forms form .formBody .slide{
   width: 60%;
   display: flex;
@@ -76,6 +140,7 @@
 
 .cadMedico .forms form .buttons {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
