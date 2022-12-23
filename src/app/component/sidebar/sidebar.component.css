@@ -27,6 +27,7 @@
 
 .sidebar .container .header svg {
   width: 60%;
+  height: 98%;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, .2));
 }
 
@@ -34,6 +35,7 @@
 .sidebar .container .body {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 .sidebar .container .body ul {

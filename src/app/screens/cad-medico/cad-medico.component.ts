@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable} from 'rxjs';
+import {Route, Router} from '@angular/router';
 @Component({
   selector: 'app-cad-medico',
   templateUrl: './cad-medico.component.html',
@@ -8,10 +9,13 @@ import { Observable} from 'rxjs';
 })
 export class CadMedicoComponent {
 
+   router: Router;
+
   checked: boolean;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, r:Router) {
     this.checked = false;
+     this.router = r
   }
 
   onChange($event: any): void {
@@ -33,6 +37,7 @@ export class CadMedicoComponent {
 
       console.log(values, 'values')
       this.saveUser(values).subscribe()
+      this.router.navigate(['/'])
   }
 
   public saveUser(data: any): Observable<any>{

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable} from 'rxjs';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-cad-beneficiario',
@@ -9,10 +10,13 @@ import { Observable} from 'rxjs';
 })
 export class CadBeneficiarioComponent {
 
+  router: Router;
+
   checked: boolean;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, r:Router) {
     this.checked = false
+    this.router = r
   }
 
   onChange($event: any): void {
@@ -36,11 +40,12 @@ export class CadBeneficiarioComponent {
 
       console.log(values, 'values')
       this.saveUser(values).subscribe()
+      this.router.navigate(['/'])
   }
-
   public saveUser(data: any): Observable<any>{
     console.log(data, 'data')
     return this.http
           .post("https://localhost:7251/api/Beneficiario/api/Cadastrar", data)
   }
 }
+
