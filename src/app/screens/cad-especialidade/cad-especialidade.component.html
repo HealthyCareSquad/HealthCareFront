@@ -2,7 +2,7 @@
   <app-sidebar isPainel="true" currentRouterSub="/painel/cadastro-especialidade"></app-sidebar>
     <div class="forms-especialidade">
       <app-header-screen title="Cadastro Especialidade"></app-header-screen>
-        <form class="form-content">
+        <form class="form-content" novalidate (submit)="onSubmit($event)">
           <div class="content-all">
             <div class="content">
               <app-text inputId="inputNameEspecialidade" valor="especialidade.nome" typeInput="text" nameInput="Nome" placeholder="Digite o nome..."></app-text>
@@ -12,7 +12,7 @@
             </div>
             <div class="contentTwo">
               <span>Ativo</span>
-              <mat-slide-toggle color="primary"></mat-slide-toggle>
+              <mat-slide-toggle novalidate (submit)="onSubmit($event)"></mat-slide-toggle>
             </div>
           </div>
           <div class="button">

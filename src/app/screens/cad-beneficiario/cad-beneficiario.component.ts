@@ -8,6 +8,7 @@ import {Router} from '@angular/router';
   templateUrl: './cad-beneficiario.component.html',
   styleUrls: ['./cad-beneficiario.component.css']
 })
+
 export class CadBeneficiarioComponent {
 
   router: Router;
@@ -48,4 +49,3 @@ export class CadBeneficiarioComponent {
           .post("https://localhost:7251/api/Beneficiario/api/Cadastrar", data)
   }
 }
-

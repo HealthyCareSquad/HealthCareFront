@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable} from 'rxjs';
+import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
