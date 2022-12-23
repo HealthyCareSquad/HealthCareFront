@@ -1,0 +1,52 @@
+<div class="cadDisponibilidade">
+  <app-sidebar isPainel="true" currentRouterSub="/painel/cadastro-disponibilidade"></app-sidebar>
+
+  <div class="forms">
+      <app-header-screen title="Cadastro Disponibilidade"></app-header-screen>
+        <div class="formBody">
+      <div class="lineTwo">
+        <mat-form-field appeareance="fill">
+          <mat-label>Especialidade</mat-label>
+          <mat-select>
+          <mat-option *ngFor="let value of especialidades" [value]="value.value">
+            {{value.label}}
+          </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appeareance="fill">
+          <mat-label>Hospital</mat-label>
+          <mat-select>
+          <mat-option *ngFor="let value of hospitais" [value]="value.value">
+            {{value.label}}
+          </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
+      <div class="lineDate">
+        <div class="dateCalendar">
+          <span>Dias disponíveis </span>
+          <p-calendar name='teste1' [minDate]=toDay  selectionMode="range" dateFormat="dd/mm/yy" [(ngModel)]="value">
+          </p-calendar>
+        </div>
+
+        <div class="timeCalendar">
+          <div class="timeInitial">
+            <span>Horário de Início</span>
+            <input class="inputTime" type="time"/>
+          </div>
+
+          <div class="timeEnd">
+            <span>Horário de Termino</span>
+            <input class="inputTime" type="time"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button type="submit">Cadastrar</button>
+    </div>
+  </div>
+</div>

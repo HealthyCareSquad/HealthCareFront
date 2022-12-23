@@ -1,0 +1,117 @@
+.cadDisponibilidade{
+  width: 100vw;
+  height: 100vh;
+  background-color: #F0F0F2;
+  display: flex;
+}
+
+.cadDisponibilidade .forms {
+  width: 100%;
+  height: 100%;
+}
+
+.cadDisponibilidade .forms .formBody {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.cadDisponibilidade .forms .formBody .lineTwo{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  gap: .6rem;
+}
+
+.cadDisponibilidade .forms  .formBody .lineTwo mat-label {
+  font-size: .9rem;
+}
+
+.cadDisponibilidade .forms  .formBody .lineDate{
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  gap: .6rem;
+}
+
+.cadDisponibilidade .forms  .formBody .lineDate .dateCalendar span{
+  margin-right: .5rem;
+  color: rgba(0, 0, 0, .5);
+}
+
+
+.cadDisponibilidade .forms  .formBody .lineDate .dateCalendar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cadDisponibilidade .forms  .formBody .timeCalendar {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  gap: .6rem;
+}
+.cadDisponibilidade .forms  .formBody .timeCalendar .inputTime{
+  padding: 0 .5rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 4px;
+  height: 100%;
+}
+
+.cadDisponibilidade .forms  .formBody .timeCalendar .timeInitial {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cadDisponibilidade .forms  .formBody .timeCalendar .timeEnd {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.cadDisponibilidade .forms .formBody .timeCalendar .timeInitial span {
+  color: rgba(0, 0, 0, .5);
+  white-space: nowrap;
+}
+
+.cadDisponibilidade .forms  .formBody .timeCalendar .timeEnd span {
+  color: rgba(0, 0, 0, .5);
+  white-space: nowrap;
+}
+
+.cadDisponibilidade   .forms .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.cadDisponibilidade  .forms button {
+  padding: 1rem 1.6rem;
+  background: transparent;
+  border: 2px solid #113059;
+  color: #113059;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+}
+
+.cadDisponibilidade  .forms button:hover {
+  color: #FFF;
+  background: #113059;
+}

@@ -79,19 +79,18 @@
             <mat-icon class="iconDrop">{{link.iconDrop}}</mat-icon>
           </div>
 
-          <!-- <div *ngIf="currentRouter == link.submenu?.[1]?.url">
-            <mat-icon class="actived">{{link.icon}}</mat-icon>
-            <a class="actived" routerLink={{link.url}}>
-              {{link.name}}
-            </a>
-            <mat-icon class="iconDrop">{{link.iconDrop}}</mat-icon>
-          </div> -->
-
           <ul class="submenu" ng-if="link.submenu.lenght" >
             <li *ngFor="let sublink of link.submenu">
-              <a routerLink={{sublink.url}}>
+              <div *ngIf="currentRouterSub ==  sublink.url">
+                <a class="actived" routerLink={{sublink.url}}>
                 {{sublink.name}}
-              </a>
+                </a>
+              </div>
+              <div *ngIf="currentRouterSub !=  sublink.url">
+                <a routerLink={{sublink.url}}>
+                {{sublink.name}}
+                </a>
+              </div>
             </li>
           </ul>
 

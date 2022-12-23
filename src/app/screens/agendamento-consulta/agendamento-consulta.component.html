@@ -1,0 +1,31 @@
+<div class="agendamentoConsulta">
+  <app-sidebar></app-sidebar>
+
+    <div class="forms-agendamento">
+      <app-header-screen title="Agendamento de Consulta"></app-header-screen>
+        <form class="form-content">
+          <div class="content">
+            <div class="content">
+              <app-text inputId="inputNameHospital" typeInput="text" nameInput="Nome do Beneficiário" placeholder="Nome do Beneficiário"></app-text>
+            </div>
+            <div class="content">
+              <app-text inputId="inputHospital" typeInput="text" nameInput="Escolha o hospital para atendimento" placeholder="Hospital 1"></app-text>
+            </div>
+            <div class="content">
+              <app-text inputId="inputEspecialidade" typesel="text" nameInput="Escolha a especialidade que deseja consulta" placeholder="Especialidade 1"></app-text>
+            </div>
+            <div class="content">
+              <app-text inputId="inputMedico" typesel="text" nameInput="Escolha o médico que deseja consulta" placeholder="Médico 1"></app-text>
+            </div>
+            <div class="content">
+              <app-text inputId="inpuHorario" typesel="text" nameInput="Escolha o dia e horário da consulta" placeholder="Dia tal"></app-text>
+            </div>
+          </div>
+          <div class="button">
+            <button type="submit">Cadastrar</button>
+          </div>
+      </form>
+    </div>
+  </div>
+
+<router-outlet></router-outlet>

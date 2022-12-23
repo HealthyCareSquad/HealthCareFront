@@ -1,5 +1,5 @@
 <div class="cadMedico">
-  <app-sidebar isPainel="true" ></app-sidebar>
+  <app-sidebar isPainel="true" currentRouterSub="/painel/cadastro-medico" ></app-sidebar>
 
   <div class="forms">
     <app-header-screen title="Cadastro Médico"></app-header-screen>
@@ -9,15 +9,15 @@
           <app-text inputId="inputName" typeInput="text" nameInput="Nome" placeholder="Digite o nome "></app-text>
         </div>
         <div class="lineTwo">
-          <app-text inputId="inputCPF" typeInput="number" nameInput="CPF" placeholder="Digite o CPF " ></app-text>
-          <app-text inputId="inputTel" typeInput="tel" nameInput="Telefone" placeholder="Digite o telefone " ></app-text>
+          <app-text inputId="inputCPF" typeInput="number" nameInput="CPF" placeholder="000.000.000-00 " ></app-text>
+          <app-text inputId="inputTel" typeInput="tel" nameInput="Telefone" placeholder="(00)00000-0000 " ></app-text>
         </div>
         <div class="lineOne">
           <app-text inputId="inputEndereco" typeInput="text" nameInput="Endereço" placeholder="Digite o endereço "></app-text>
         </div>
         <div class="slide">
           <span>Ativo</span>
-          <mat-slide-toggle color="primary"></mat-slide-toggle>
+          <mat-slide-toggle (change)="onChange($event)"  color="primary"></mat-slide-toggle>
         </div>
 
       </div>

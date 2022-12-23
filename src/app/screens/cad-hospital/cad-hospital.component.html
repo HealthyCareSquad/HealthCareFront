@@ -1,9 +1,9 @@
 <div class="cadHospital">
-  <app-sidebar></app-sidebar>
+  <app-sidebar isPainel="true" currentRouterSub="/painel/cadastro-hospital"></app-sidebar>
 
     <div class="forms-hospital">
       <app-header-screen title="Cadastro Hospital"></app-header-screen>
-        <form class="form-content">
+        <form class="form-content" novalidate (submit)="onSubmit($event)">
           <div class="content">
             <div class="contentOne">
               <app-text inputId="inputNameHospital" typeInput="text" nameInput="Nome do Hospital" placeholder="Nome do Hospital"></app-text>
@@ -17,7 +17,7 @@
             </div>
             <div class="contentTwo">
               <span>Ativo</span>
-              <mat-slide-toggle></mat-slide-toggle>
+              <mat-slide-toggle (change)="onChange($event)" color="primary"></mat-slide-toggle>
               <app-text inputId="inputCnesHospital" typeInput="number" nameInput="CNES" placeholder="0000000"></app-text>
             </div>
           </div>

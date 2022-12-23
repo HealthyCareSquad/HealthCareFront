@@ -17,7 +17,13 @@ import { HeaderScreenComponent } from './component/header-screen/header-screen.c
 import { ReactiveFormsModule } from '@angular/forms';
 import { CadHospitalComponent } from './screens/cad-hospital/cad-hospital.component';
 import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-especialidade.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {CalendarModule} from 'primeng/calendar';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CadDisponibilidadeComponent } from './screens/cad-disponibilidade/cad-disponibilidade.component';
+import { AgendamentoConsultaComponent } from './screens/agendamento-consulta/agendamento-consulta.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,9 @@ import { HttpClientModule } from '@angular/common/http';
     TextComponent,
     HeaderScreenComponent,
     CadHospitalComponent,
-    CadEspecialidadeComponent
+    CadEspecialidadeComponent,
+    CadDisponibilidadeComponent,
+    AgendamentoConsultaComponent
   ],
   imports: [
     CommonModule,
@@ -40,6 +48,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatSlideToggleModule,
     ReactiveFormsModule,
+    CalendarModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatSelectModule,
     HttpClientModule
   ],
   providers: [],
