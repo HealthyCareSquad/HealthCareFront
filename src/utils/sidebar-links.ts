@@ -10,11 +10,10 @@ export type SidebarLink = {
   }[]
 }
 
-
 export const sidebarLinks: SidebarLink[] = [
   {name: 'Home', url: '/', icon: 'home'},
   {name: 'Cadastro beneficiário', url: '/cadastro-beneficiario', icon: 'account_circle'},
-  {name: 'Agendamento', url: '/aa', icon: 'event'},
+  {name: 'Agendamento', url: '/agendamento-consulta', icon: 'event'},
   {name: 'Painel Administrativo', isPainel: 'true' , url: '', icon: 'supervised_user_circle', iconDrop: 'keyboard_arrow_down', submenu: [
     {name: 'Cadastrar Hospital', url: '/painel/cadastro-hospital'},
     {name: 'Cadastrar Médico', url: '/painel/cadastro-medico'},

@@ -6,6 +6,7 @@ import {HomeComponent} from './screens/home/home.component'
 import { CadHospitalComponent } from './screens/cad-hospital/cad-hospital.component';
 import { CadEspecialidadeComponent } from './screens/cad-especialidade/cad-especialidade.component';
 import { CadDisponibilidadeComponent } from './screens/cad-disponibilidade/cad-disponibilidade.component';
+import { AgendamentoConsultaComponent } from './screens/agendamento-consulta/agendamento-consulta.component';
 
 const routes: Routes = [
   {path: 'cadastro-beneficiario', component:CadBeneficiarioComponent},
@@ -13,8 +14,8 @@ const routes: Routes = [
   {path: 'painel/cadastro-medico', component:CadMedicoComponent},
   {path: 'painel/cadastro-hospital', component:CadHospitalComponent},
   {path: 'painel/cadastro-especialidade', component:CadEspecialidadeComponent},
-  {path: 'painel/cadastro-disponibilidade', component: CadDisponibilidadeComponent}
-
+  {path: 'painel/cadastro-disponibilidade', component: CadDisponibilidadeComponent},
+  {path: 'agendamento-consulta', component: AgendamentoConsultaComponent}
   ];
 
 @NgModule({

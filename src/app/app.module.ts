@@ -23,6 +23,7 @@ import {CalendarModule} from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CadDisponibilidadeComponent } from './screens/cad-disponibilidade/cad-disponibilidade.component';
+import { AgendamentoConsultaComponent } from './screens/agendamento-consulta/agendamento-consulta.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CadDisponibilidadeComponent } from './screens/cad-disponibilidade/cad-d
     HeaderScreenComponent,
     CadHospitalComponent,
     CadEspecialidadeComponent,
-    CadDisponibilidadeComponent
+    CadDisponibilidadeComponent,
+    AgendamentoConsultaComponent
   ],
   imports: [
     CommonModule,

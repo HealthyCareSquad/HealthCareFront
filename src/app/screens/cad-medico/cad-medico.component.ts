@@ -22,5 +22,23 @@ export class CadMedicoComponent {
   onSubmit($event: any): void {
     $event.preventDefault()
 
+    let values = {
+      nome: $event.target.inputName.value,
+      cpf: $event.target.inputCPF.value,
+      telefone:  $event.target.inputTel.value,
+      endereco:   $event.target.inputEndereco.value,
+      ativo: this.checked,
+    }
+
+
+      console.log(values, 'values')
+      this.saveUser(values).subscribe()
+  }
+
+  public saveUser(data: any): Observable<any>{
+    console.log(data, 'data')
+    return this.http
+          .post("https://localhost:7251/api/Profissional/api/Cadastrar", data)
   }
 }
+
