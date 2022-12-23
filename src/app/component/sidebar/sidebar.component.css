@@ -56,6 +56,10 @@
   color: #113059;
 }
 
+.sidebar .container .body ul li > div:hover span{
+  color:  #113059;
+}
+
 .sidebar .container .body ul li > div .actived {
   color: #113059;
 }
